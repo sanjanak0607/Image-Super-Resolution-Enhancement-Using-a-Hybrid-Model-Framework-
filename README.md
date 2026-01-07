@@ -57,10 +57,33 @@ This file contains helper functions for training super-resolution models, includ
 **train.py-**
 This script implements the complete training pipeline for the hybrid image super-resolution framework. It trains individual CNN, Transformer, and GAN models using mixed-precision training, followed by training a Fusion Network that combines their outputs. The script performs validation using PSNR and SSIM metrics and saves model checkpoints during training.
 
-**Results-**
-The hybrid framework produces visually sharper and more structurally consistent super-resolved images compared to individual models. Improvements are observed in standard evaluation metrics such as PSNR and SSIM, along with enhanced visual quality in reconstructed outputs.
+**Results & Evaluation-**
+The proposed hybrid image super-resolution framework was evaluated using both quantitative metrics and qualitative visual analysis. The evaluation focuses on assessing reconstruction quality and perceptual consistency rather than claiming state-of-the-art performance.
 
-**Current Status-**
-🚧**Work in Progress**
 
-Future improvements include further optimization, extended evaluation, and experimentation with advanced fusion strategies.
+**Quantitative Evaluation-**
+Model performance was measured using standard image quality metrics:
+
+1. PSNR (Peak Signal-to-Noise Ratio)
+
+2. SSIM (Structural Similarity Index)
+
+Average validation metrics are reported in the results/metrics_summary.txt file for reference. These values indicate consistent reconstruction behavior across the evaluated samples.
+
+Note: The reported metrics are provided for reference purposes. Further tuning and extended training are expected to improve quantitative performance.
+
+**Qualitative Evaluation-**
+Visual comparisons demonstrate that:
+
+1. The CNN model produces stable reconstructions with good structural consistency.
+
+2. The Transformer model captures global contextual information more effectively.
+
+3. The GAN-based generator enhances perceptual sharpness and texture realism.
+
+4. The Fusion model combines complementary features from all models, resulting in more balanced and visually consistent super-resolved images.
+
+Due to repository size constraints, qualitative results are shown for one representative sample. The complete visual comparison (LR, CNN, Transformer, GAN, and Fusion outputs) is available in the results/ directory.
+
+**🚧 Project Status-**
+This project is currently a **work in progress**. Future improvements include extended evaluation, hyperparameter optimization, and experimentation with advanced fusion strategies.
