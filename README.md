@@ -68,7 +68,7 @@ Model performance was measured using standard image quality metrics:
 
 2. SSIM (Structural Similarity Index)
 
-Average validation metrics are reported in the results/metrics_summary.txt file for reference. These values indicate consistent reconstruction behavior across the evaluated samples.
+Average validation metrics are reported in the metrics_summary.txt file for reference. These values indicate consistent reconstruction behavior across the evaluated samples.
 
 Note: The reported metrics are provided for reference purposes. Further tuning and extended training are expected to improve quantitative performance.
 
