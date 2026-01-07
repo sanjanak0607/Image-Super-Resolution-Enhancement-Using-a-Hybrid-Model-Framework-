@@ -1,0 +1,38 @@
+Metrics Summary – Hybrid Image Super-Resolution Framework
+
+Dataset:
+DIV2K (Validation subset)
+
+Evaluation Metrics:
+- PSNR (Peak Signal-to-Noise Ratio)
+- SSIM (Structural Similarity Index)
+
+Average Validation Metrics (Approximate):
+
+CNN Model:
+PSNR: 24.66 dB
+SSIM: 0.6604
+
+Transformer Model:
+PSNR: 26.13 dB
+SSIM: 0.6550
+
+GAN Model:
+PSNR: 25.33 dB
+SSIM: 0.6755 
+
+Fusion Model:
+PSNR: 26.76 dB
+SSIM: 0.7115
+
+Observations:
+- CNN produces stable but relatively smooth reconstructions.
+- Transformer improves global structural consistency.
+- GAN enhances perceptual sharpness and texture realism.
+- Fusion model provides more balanced outputs by integrating complementary features.
+
+Note:
+Metric values are reported for reference. This project focuses on hybrid architecture design and qualitative improvements. Further optimization and extended training are expected to improve quantitative results.
+
+Status:
+Work in Progress
